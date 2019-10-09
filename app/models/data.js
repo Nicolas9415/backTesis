@@ -7,6 +7,7 @@ const dataSchema = new mongoose.Schema(
     picture: Buffer,
     note: Buffer,
     location: String,
+    position: Number,
   },
   { timestamps: true },
 );
