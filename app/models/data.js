@@ -4,7 +4,7 @@ const dataSchema = new mongoose.Schema(
   {
     task: String,
     active: Boolean,
-    picture: Buffer,
+    picture: String,
     note: Buffer,
     location: String,
     position: Number,
