@@ -6,6 +6,7 @@ const dataSchema = new mongoose.Schema(
     active: Boolean,
     picture: Buffer,
     note: Buffer,
+    date: String,
     location: String,
     position: Number,
   },
