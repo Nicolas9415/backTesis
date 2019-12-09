@@ -5,6 +5,7 @@ const express = require('express');
 const logger = require('morgan');
 const helmet = require('helmet');
 const mongoose = require('mongoose');
+const cors = require('cors')
 
 require('express-async-errors');
 
@@ -23,6 +24,8 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use('/', routes);
+app.use(cors())
+
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => next(createError(HttpStatus.NOT_FOUND)));
